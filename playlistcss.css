@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+* {
+	  margin: 0;
+	  padding: 0;
+	  outline: none;
+	}
+	body, html {
+		  width: 100%;
+		  height: 100%;
+	}
+		
+	body {
+		  background-color: #fafafa;
+		  font-family: Trebuchet MS, Helvetica;
+		}
+		
+		header {
+			  width: 100%;
+			  padding: 10px 0.5% 0px 0.5%;
+			  background: transparent;
+			  float: left;
+			  position: fixed;
+			}
+			
+			header #logo {
+				  color: #fff;
+				  cursor: pointer;
+				}
+				header #logo span {
+					  font-size: 1.7em;
+					  line-height: 45px;
+					  margin-left: 40px;
+					  font-family: 'Staatliches', serif;
+					}
+					@media (min-width: 701px) {
+						  #logo {
+							float: left;
+							width: 30%;
+							font-size: 1.1em;
+						  } 
+						  #about {
+								  float: right;
+								  width: 67%;
+								}
+					  }
+					  
+					  @media (max-width: 700px) {
+							#logo {
+							  margin-top: 15px;
+							  width: 100%;
+							  font-size: 1.5em;
+							}
+							
+							  #about {
+								float: left;
+								width: 100%;
+							  }
+						}
+						#about  {
+							  text-align: center;
+							  font-size: 1em;
+							  line-height: 20px;
+							  margin-bottom: 10px;
+							}
+							#about > a {display: inline; color: #fff}
+							#about > a:hover {
+							 color: #b0b0b0;
+							text-decoration: underline;
+							}
+							#about > a:not(:last-child) {
+							margin-right: 7%;
+							}
+							li { display: inline;
+							}
+							.fixed {
+							z-index: 5000;
+							background-color: #fff;
+							 border-bottom: 1px solid silver;
+							}
+							header.fixed #logo {
+							 color: #343434;}
+																
+							.fixed #about a {color: #343434}
+							.fixed #about a:hover {color: #7c7c7c}
+
+									#top {
+										  width: 100%;
+										  background-image: url(https://sites.google.com/site/musicwhichwelove/_/rsrc/1389271771070/home/the-neighbourhood/the-neighbourhood.jpg);
+										  background-blend-mode: multiply;
+										  background-color: #484950;
+										  background-size: cover;
+										  text-align: center;
+										  color: #fff;
+										  font-size: 3em;
+										}
+										@media (min-width: 1001px) {
+											  #top {
+												font-size: 3em;
+												height: 1000px;
+											  }
+											}
+											
+											@media (max-width: 1000px) and (min-width: 651px) {
+											  #top {
+												font-size: 2em;
+												height: 600px;
+											  }
+											}
+											
+											@media (max-width: 650px) {
+											  #top {
+												font-size: 1.3em;
+												padding-top: 50%;
+												height: 500px;
+											  }
+											}
+											
+											@media (max-width: 450px) {
+											  #top {
+												font-size: 0.9em;
+											  }
+											}
+										
+										#top h1 {
+											padding-top: 20%;
+										}
+										#top h3 {
+											color: #ccc;
+										}
+										#main {
+											  float: left;
+											  background-color: #f6f6f6;
+											  border-top: 2px solid silver;
+											  color: #484848;
+											  font-size: 1.3em;
+											}
+											@media (min-width: 1401px) {
+												  #main {
+													padding: 100px 20%;
+													width: 60%;
+												  }
+												}
+												
+												@media (max-width: 1400px) {
+												  #main {
+													padding: 100px 10%;
+													width: 80%;
+												  }
+												}
+												
+												@media (max-width: 700px) {
+												  #main div {
+													width: 98%!important;
+													margin-bottom: 20px;
+												  }
+												}
+												
+																		
+											.full-screen__video{
+												position: absolute;
+												top: 0;
+												left: 0;
+												width: 100%;
+												height: 100%;
+												object-fit: cover;
+											}
+											.full-screen{
+												position: relative;
+												min-height: 100vh;
+												display: flex;
+												flex-direction: column;
+												padding: 50px 15px;
+											}
+											.full-screen__body{
+												position: relative;
+												z-index: 2;
+												display: flex;
+												flex: 1 1 auto;
+												justify-content: center;
+												flex-direction: column;
+												text-transform: uppercase;
+												
+											}
+											
+											.content {
+													background-color: #343434;
+													font: serif;
+													color: white;
+												
+												}
+											
+											.content_container {
+												max-width: 1200px;
+												margin: 0px auto;
+												padding: 50px 15px;
+												font-size: 18px;
+												line-height: 150%;
+											}
+											.content_container p{
+												margin: 0px 0px 20px 0px;
+												
+											}
+												}
+												h1, h3 {
+													  font-family: 'Staatliches', serif;
+													  font-weight: lighter;
+													}
+													

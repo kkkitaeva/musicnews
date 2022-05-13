@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+* {
+	  margin: 0;
+	  padding: 0;
+	  outline: none;
+	}
+	body, html {
+		  width: 100%;
+		  height: 100%;
+	}
+		
+	body {
+		  background-color: #fafafa;
+		  font-family: Trebuchet MS, Helvetica;
+		}
+		
+		header {
+			  width: 100%;
+			  padding: 10px 0.5% 0px 0.5%;
+			  background: transparent;
+			  float: left;
+			  position: fixed;
+			}
+			
+			header #logo {
+				  color: #fff;
+				  cursor: pointer;
+				}
+				header #logo span {
+					  font-size: 1.7em;
+					  line-height: 45px;
+					  margin-left: 40px;
+					  font-family: 'Staatliches', serif;
+					}
+					@media (min-width: 701px) {
+						  #logo {
+							float: left;
+							width: 30%;
+							font-size: 1.1em;
+						  } 
+						  #about {
+								  float: right;
+								  width: 67%;
+								}
+					  }
+					  
+					  @media (max-width: 700px) {
+							#logo {
+							  margin-top: 15px;
+							  width: 100%;
+							  font-size: 1.5em;
+							}
+							
+							  #about {
+								float: left;
+								width: 100%;
+							  }
+						}
+						#about  {
+							  text-align: center;
+							  font-size: 1em;
+							  line-height: 20px;
+							  margin-bottom: 10px;
+							}
+							.about a {display: inline; color: #fff}
+							.about > a:hover {
+							  color: #b0b0b0;
+							  text-decoration: underline;
+							}
+							.about > a:not(:last-child) {
+							  margin-right: 7%;
+							}
+							li { display: inline;
+							}
+							* {
+									margin: 0;
+									padding: 0;
+								} 
+								.social a { color:inherit; } 
+								
+								.social {
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										transform: translate(-50%, -50%);
+									}
+									.social a {
+										display: inline-block;
+										height: 100px;
+										width: 100px;
+										background: #f1f1f1;
+										margin: 10px;
+										border-radius: 30%;
+										text-align: center;
+									}
+									.social a i {
+										color: ##b0b0b0;
+										font-size: 40px;
+										margin-top: 30px;
+									}
+									.social a:hover{
+										background: ##b0b0b0;
+										transition: 1s;
+									}
+									.social a:hover i{
+										color: #b0b0b0;
+										transition: 1s;
+										transform: scale(1.3);
+									}
+								
+							.fixed {
+								  z-index: 5000;
+								  background-color: #fff;
+								  border-bottom: 1px solid silver;
+								}
+								header.fixed #logo {
+									  color: #343434;
+									}
+									.fixed #about b {color: #343434}
+									.fixed #about b:hover {color: #7c7c7c}
+									
+									
+								
+									#top {
+										  width: 100%;
+										  background-image: url(https://cdn.aarp.net/content/dam/aarp/entertainment/music/2019/11/1140x655-hip-hop-banner.jpg);
+										  background-blend-mode: multiply;
+										  background-color: #2e3a44;
+										  background-size: cover;
+										  text-align: center;
+										  color: #fff;
+										  font-size: 3em;
+										}
+										@media (min-width: 1001px) {
+											  #top {
+												font-size: 3em;
+												height: 1000px;
+											  }
+											}
+											
+											@media (max-width: 1000px) and (min-width: 651px) {
+											  #top {
+												font-size: 2em;
+												height: 600px;
+											  }
+											}
+											
+											@media (max-width: 650px) {
+											  #top {
+												font-size: 1.3em;
+												padding-top: 50%;
+												height: 500px;
+											  }
+											}
+											
+											@media (max-width: 450px) {
+											  #top {
+												font-size: 0.9em;
+											  }
+											}
+										
+										#top h1 {
+											padding-top: 10%;
+										}
+										#top h2 {
+											font-size: 30pt;
+												padding-top: 15%;
+												color: #ccc;
+											}
+									h1, h2 {
+										font-family:'Staatliches', serif; 
+									}

@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://kit.fontawesome.com/c9f250de17.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Contacts</title> 
+	<link rel="stylesheet" href="contactscss.css"  />
+	</head>
+	<body>
+		<header>
+			<div id="logo" onclick="slowScroll('#top')">
+				<span>by Sofia Kitaeva</span>
+			</div>
+			<div id="about">
+				<li class="active"><a href="qa.html" onclick="slowScroll('#qa')" title="QA">Homepage</a> </li>
+				<li class="active"><a href="realeses.html"Releases" onclick="slowScroll('#main')">Releases</a> </li>
+				<li class="active"><a href="contacts.html" onclick="slowScroll('#Contacts')" title="Contacts">Contacts</a></li>
+                <li class="active"><a href="playlist.html" onclick="slowScroll('#Weekly video')" title="Weekly video">Weekly video</a></li>
+				
+				
+				
+		</header>
+		
+		<div id="top">
+		<h1>Contacts </h1>
+		<h2> Mail: Kitaeva1310@gmail.com </h2>
+		</div>
+		<div class="social">
+			<a href="https://www.instagram.com/kkkitaeva/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCFoLqGrN-6YvTj739OY7n4Q" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+			<a href="https://twitter.com/kkkitaeva" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://vk.com/sonyakitaeva" target="_blank" ><i class="fa-brands fa-vk"></i></a>
+			<a href="https://t.me/kkkitaeva" target="_blank" ><i class="fa-brands fa-telegram"></i></a>
+			
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		function slowScroll(id) {
+			  $('html','body').animate({
+				scrollTop: $(id).offset().top
+			  }, 500);
+			}
+			$(document).on("scroll", function () {
+				  if($(window).scrollTop() === 0)
+					$("header").removeClass("fixed");
+				  else
+					$("header").attr("class", "fixed");
+				});
+		</script>
+	</body>
+	
+</html>

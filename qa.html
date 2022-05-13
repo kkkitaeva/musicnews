@@ -1,0 +1,94 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Music news</title> 
+	<link rel="stylesheet" href="homepagecss.css"  />
+	</head>
+	<body>
+		<header>
+			<div id="logo" onclick="slowScroll('#top')">
+				<span>by Sofia Kitaeva</span>
+			</div>
+			<div id="about">
+				<li class="active"><a href="qa.html" onclick="slowScroll('#qa')" title="QA">Homepage</a> </li>
+				<li class="active"><a href="realeses.html"Releases" onclick="slowScroll('#main')">Releases</a> </li>
+				<li class="active"><a href="contacts.html" onclick="slowScroll('#Contacts')" title="Contacts">Contacts</a></li>
+				<li class="active"><a href="playlist.html" onclick="slowScroll('#Weekly video')" title="Weekly video">Weekly video</a></li>
+				
+				
+				
+		</header>
+		
+		<div id="top">
+		<h1>New music </h1>
+		<h3>every day!</h3>
+		</div>
+		
+		<div id="main">
+			<div class="intro">
+			  <h2>Our service will help you</h2>
+			  <span>spend a day in the company with great music</span>
+			</div>
+			<div class="text">
+				  <span>We bring you the latest Hip Hop album dates and releases, guides, exclusive interviews, reviews, and the eventual diss and controversy</span>
+				</div>
+		</div>
+		<div id="overview">
+			<h2>everything is easier with us</h2>
+			<h4>we make sure that you stay informed when it comes to hip hop news</h4>
+			<h5>What Is Hip-Hop Music?</h5>
+			
+			
+			<div class="img">
+					  <img src="https://i1.sndcdn.com/artworks-ay6W42FOaWEhKJyc-pOCv9g-t500x500.jpg" alt="">
+					  <span>Hip-hop is an artistic and cultural movement that has influenced everything from fashion to politics. One major manifestation of hip-hop culture is its music.</span>
+					</div>
+					<div class="img">
+						  <img src="https://i.pinimg.com/736x/58/90/00/589000aa6cad0886f70a54cc87773152.jpg" alt="">
+						  <span>The genre originated in New York City in the 1970s as a cultural exchange among Black, Latino, and Caribbean youth and has grown into one of the most consumed genres of music in the United States.</span>
+						</div>
+						<div class="img">
+							  <img src="https://dazedimg-dazedgroup.netdna-ssl.com/1050/azure/dazed-prod/1120/8/1128211.jpg" alt="">
+							  <span>As a culture, hip-hop is built on four main pillars: DJing, rapping (also called MCing), breakdancing (usually called breaking or b-boying), and graffiti.</span>
+							</div>
+					<div class="img">
+					  <img src="http://stryvemarketing.com/wp-content/uploads/2016/10/earlydaysofhop.jpg" alt="">
+					  <span>Since its inception, hip-hop has birthed dozens of subgenres, including trap, grime, gangsta rap, rap rock (or nu metal), crunk, chillhop, bounce, mumble rap, Latin hip-hop, and conscious hip-hop. </span>
+					</div>
+				  </div>
+			<div id="contacts">
+					<center><h6>Feedback</h6></center>
+					<form id="form_input">
+					  <label for="name">Name <span>*</span></label><br>
+					  <input type="text" placeholder="Enter your name" name="name" id="name"><br>
+					  <label for="email">Your e-mail <span>*</span></label><br>
+							<input type="email" placeholder="Enter your email" name="email" id="email"><br>
+							<label for="message">Message <span>*</span></label><br>
+							<textarea placeholder="Enter your message" name="message" id="message"></textarea><br>
+							<div id="mess_send" class="btn">Send</div>
+					</form>
+				  </div>
+				
+
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		function slowScroll(id) {
+			  $('html','body').animate({
+				scrollTop: $(id).offset().top
+			  }, 500);
+			}
+			$(document).on("scroll", function () {
+				  if($(window).scrollTop() === 0)
+					$("header").removeClass("fixed");
+				  else
+					$("header").attr("class", "fixed");
+				});
+		</script>
+	</body>
+	
+</html>
